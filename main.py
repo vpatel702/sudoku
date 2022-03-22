@@ -1,5 +1,3 @@
-import pprint
-
 
 def solve(bo):
     find = find_empty(bo)
@@ -57,7 +55,7 @@ def print_board(bo):
             print ("--------------")
         for j in range (len(bo[0])):
             if j % 3 == 0:
-                print(" | ",end="")
+                print(" | ", end="")
             if j ==8:
                 print(bo[i][j], end="\n")
             else:
@@ -74,6 +72,7 @@ board = [
         [1, 2, 0, 0, 0, 7, 4, 0, 0],
         [0, 4, 9, 2, 0, 6, 0, 0, 7]
     ]
-pp = pprint.PrettyPrinter(width=41, compact=True)
-a = solve(board)
-pp.pprint(a)
+print_board(board)
+solve(board)
+print("------------------------------------------------")
+
