@@ -1,3 +1,4 @@
+
 def solve(bo):
     find = find_empty(bo)
     if not find:
@@ -16,7 +17,7 @@ def solve(bo):
     return False
 
 
-def valid(bo, pos, num):
+def valid(bo, num, pos):
 
     #check row
     for i in range(len(bo[0])):
